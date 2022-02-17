@@ -1,0 +1,23 @@
+<html xmlns:form="http://www.w3.org/1999/xhtml">
+<head>
+</head>
+<body>
+<h3>Welcome, enter filter options</h3>
+<form:form method="POST"
+           action="/spring-mvc-xml/filter" modelAttribute="movie">
+  <table>
+    <tr>
+      <td><form:label path="char">Char</form:label></td>
+      <td><input path="char"/></td>
+    </tr>
+    <tr>
+      <td><form:label path="amount">Amount</form:label></td>
+      <td><input path="amount"/></td>
+    </tr>
+    <tr>
+      <td><input type="submit" value="Submit"/></td>
+    </tr>
+  </table>
+</form:form>
+</body>
+</html>
